@@ -1,0 +1,238 @@
+body{
+    background-color: rgb(6, 11, 46);
+    color: white;
+    margin: auto;
+    padding: 15px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-style: normal;
+}
+
+header{
+    align-items:center;
+    line-height: 5px;
+    justify-content: left;
+}
+h1{
+    font-family: none;
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+}
+span{
+    color: lightseagreen;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin: 70px;
+}
+section{
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+article{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+article img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px; 
+}
+ol{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+ol img{
+    width:20%;
+    height: auto;
+    border-radius: 5px;
+    border: 4px solid white;
+}
+li{
+    display: flex;
+    gap:15px;
+    justify-content: space-between;
+    align-items: center;
+}
+#reserva{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#reserva ol{
+    border: 5px groove white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 50px;
+    font-size: 20px;
+}
+button{
+    color: lightseagreen;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: rgb(6, 11, 46);
+    border: 3px outset white;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    background-color: lightseagreen;
+    color: white;
+    transition: 0.5s;
+    filter: contrast(150%);
+}
+#res{
+    text-align: center;
+}
+#equipe{
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+}
+#time{
+    text-align: center;
+}
+#fabio{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#fabio img{
+    width: 10%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+#mariano{
+    display: flex;
+    align-items: center;
+}
+#mariano img{
+    width: 10%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+h4{
+    font-size: 30px;
+}
+#map{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+#mapft{
+    width: 400px;
+    height: auto;
+}
+footer{
+    position: fixed;
+    bottom: 10px;
+    cursor: pointer;
+}
+footer:hover{
+    filter: contrast(150%);
+}
+footer img{
+    width: 50px;
+    height: auto;
+}
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {    
+    h1{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+    section{
+        margin-top: 65px;
+        margin-bottom: 65px;
+    } /* Espaçamento entre o título e as imagens */
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas com larguras iguais */
+        place-items: center;
+        margin: auto;
+    }
+    article img{
+        width: 175px;
+        height: auto;
+    }
+    li p{
+        margin-bottom: 250px;
+        font-size: 15px;
+    }
+    li img{
+        width: 30%;
+        position: absolute;
+    }
+    li img:first-child{
+        left: 50%; /* Posiciona a primeira imagem no centro */
+        transform: translateX(-100%);
+    }  
+    li img:last-child{
+        right: 50%; /* Posiciona a segunda imagem no centro */
+        transform: translateX(100%);
+    }
+    #time{
+        align-items: center;
+    }
+    #time img{
+        width: 250px;
+    }
+    #fabio{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #fabio img{
+        display: none;
+        /*width: 80px;
+        margin-top: 200px;*/
+    }
+    #mariano img{
+        display: none;
+    }
+    #mariano{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        margin-top: 2px;
+    }
+    #mapft{
+        width: 200px;
+    }
+    h3{
+        font-size: 25px;
+        margin:20px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    ol{
+        gap: 10px;
+    }
+}
